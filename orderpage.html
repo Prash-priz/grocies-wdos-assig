@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vegetables</title>
+<link rel="stylesheet" href="/styles/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="mainheader">
+        <h1 id="logo"><a href="homepage.html">Grocies</a></h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li class="dropdown">
+                    Products>>
+                    <div class="dropdown-content">
+                        <a href="/vegetables.html">Vegetables</a>
+                        <a href="/dairy.html">Dairy</a>
+                        <a href="/cosmetics.html">Cosmetics</a>
+                    </div>
+                </li>
+                <li><a href="orderpage.html">Order </a></li>
+                <li><a href="aboutus.html">About Us </a></li>
+                <li><a href="loyalty.html">Loyalty</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <h2>Place your Orders....</h2>
+    <section class="order" >
+        <div class="text-container">
+        <p >Welcome to our Order Page – your gateway to hassle-free shopping from the comfort of your own home. Whether you're stocking up on essentials, planning a special meal, or simply replenishing your pantry, we've got you covered. </p>
+    </section>
+    <form action="#" method="post" class="form">
+    <fieldset class="product">
+        <h2>Order Information</h2>
+        <label for="product-type">Product Type:</label>
+        <select id="product-type" name="product-type" required>
+            <option value="produce">Vegetables</option>
+            <option value="produce">Diary</option>
+            <option value="produce">Cosmetics</option>
+        </select><br><br>
+
+        <label for="product"> Choose Product:</label>
+        <select id="product-type" name="choose-product" required>
+            <option value="produce">Produce</option>
+        </select><br><br>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+        <div class="center-btn">
+        <input type="submit" value="Add to Cart">
+        </div>
+        
+        
+    </fieldset>
+    <fieldset class="product">
+        <h2>Personal Information</h2>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+        
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+        
+        <label for="dob">Year of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    </fieldset>
+    <fieldset class="product">
+        <h2>Billing Information</h2>
+        <label for="address">Address:</label>
+        <textarea type="text" id="address" name="address" required></textarea><br><br>
+        
+        <label for="zipcode">Zipcode:</label>
+        <input type="text" id="zipcode" name="zipcode" required><br><br>
+        
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" name="payment-method" required>
+            <option value="credit-card">Credit/Debit Card</option>
+            <option value="cash">Cash On Delivery</option>
+        </select><br><br>
+    </fieldset>
+
+    <fieldset class="product">
+        <h2>Shipping Information</h2>
+        <label for="receive-method">Method of Receiving:</label>
+        <select id="receive-method" name="receive-method" required>
+            <option value="pick-up">Pick up from store</option>
+            <option value="delivery">Delivery</option>
+        </select><br><br>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" value="Kandy" required readonly><br><br>
+        
+        <label for="delivery-address">Delivery Address:</label><br>
+        <input type="radio" id="billing-address" name="delivery-address" value="billing-address" checked>
+        <label for="billing-address">Use Billing Address</label><br>
+        <input type="radio" id="different-address" name="delivery-address" value="different-address">
+        
+        
+        <label for="secondary-phone">Secondary phone number (optional):</label>
+        <input type="tel" id="secondary-phone" name="secondary-phone"><br><br>
+        <div class="center-btn">
+        <input type="submit" value="Submit Order">
+        </div>
+    </fieldset>
+    </form>
+</body>
+<footer>
+    <p>&copy;Grocies. All rights reserved.</p>
+    <p>+94 70 536 6862</p>
+    <p>grociessupermarket@gmail.com</p>
+</footer>
+</body>
+</html>
